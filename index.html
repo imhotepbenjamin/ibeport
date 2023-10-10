@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  </head>
+    <body>
+
+      <header class = "header">
+      <nav class = "navbar glass-effect">
+        <ul>
+          <li><a href = "#home">Home</a></li>
+          <li><a href = "#developer">Creative Development</a></li>
+          <li><a href = "#music">Music</a></li>
+          <li><a href = "#gfx">Graphic Design</a></li>
+          <li><a href = "#about-me">About Me</a></li>
+        </ul>
+      </nav>
+      
+        <button class="contact-button glass-effect" id="contactButton">Contact Me</button>
+
+      </header>
+        
+
+    <div id="contactModal" class="modal "> <!--add glass-effect class here to blur out whole background when modal is clicked-->
+      <div class="modal-content glass-effect"><!--add glass-effect class here to only blur background of modal when modal is clicked-->
+        <span class="close-button" id="closeModal">&times;</span>
+        <h3>Contact Me</h3>
+        <p>Use the chat box below to send me an email. I'll get back to you as soon as possible!</p>
+        <div class="chat-box" id="chatBox">
+          <div class="message">
+            <p>How can I assist you today?</p>
+          </div>
+          <!-- Other messages and responses go here -->
+        </div>
+        <form id="emailForm">
+          <input type="text" id="messageInput" placeholder="Insert...">
+          <button type="submit" class = "glass-effect">Send</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+      <div id = "container">
+
+        <div class = "section" id = "home">
+          <div id = "home-background">
+          </div>
+          <div class = "home-content glass-effect">
+            <h1>Hi, I'm Imhotep.</h1>
+            <h5>Creative Developer | Audio Producer | Digital Designer</h5>
+            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+          </div>
+        </div>
+
+        <div class = "section" id = "developer">
+          <div class = "developer-content content-box">
+            <!-- <img src = ""> -->
+              <h2>Creative Developer</h2>
+              <h3>Front End |<span> Back End</span></h3>
+              <p>I have been working in </p>
+              <button type = "button" class = "glass-effect">Let's Talk</button>
+            </div>
+        </div>
+
+        <div class = "section" id = "music">
+          <div class = "music-content content-box glass-effect">
+            <!-- <img src = ""> -->
+              <h2>Music</h2>
+              <h3>Production | Sound Design</h3>
+              <p>I've been into music production since the summer of 2012. I initially started with Audiotool and then switched to Image-Line FL Studio in 2015. I go by the name "updnbxnji" as a producer. It's been quite a journey, and I've been able to grow and experiment with my music over the years, building a portfolio that I'm proud of.
+              </p>
+              <button type = "button" class = "glass-effect" id = "yt-button"><a href = "https://www.youtube.com/@updnbxnji/featured" target="_blank">My YouTube Channel</a></button>
+          </div>
+          <div class = "content-box music-vids glass-effect">
+            <iframe id = "run" width="450" height="253" src="https://www.youtube.com/embed/x4gBESxCAoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id = "hype" width="450" height="253" src="https://www.youtube.com/embed/CpK-PYvwC-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id = "time" width="450" height="253" src="https://www.youtube.com/embed/Mm4BkElx9b0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id = "battle" width="450" height="253" src="https://www.youtube.com/embed/u9rKAlQ5JSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id = "driveway" width="450" height="253" src="https://www.youtube.com/embed/-LJoUNX0FRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id = "richer" width="450" height="253" src="https://www.youtube.com/embed/GFCTEUe3qF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class = "section" id = "gfx">
+          <div class = "gfx-content content-box glass-effect">
+            <!-- <img src = ""> -->
+              <h2>Graphics Design</h2>
+              <h3>Photoshop | Video Editing</h3>
+              <p>In 2016, I delved into the world of graphic and digital design with a specific goal in mind - crafting original visuals for my website. Throughout this journey, I've honed my skills primarily through the use of industry-standard software like Adobe Photoshop and Adobe Premiere Pro. My distinctive graphic art style can be characterized as a fusion of grainy textures and abstract elements, which I've cultivated over the years to bring a unique visual perspective to my work.</p>
+              <button type = "button" class = "glass-effect">Let's Talk</button>
+          </div>
+         
+          <div class="slider content-box title glass-effect">
+            <div class="imgs">
+              <!-- you can add divs with class img here and they will be 
+                   automatically added to slider -->
+              <!-- style="left: 0;" in case JS is disabled -->
+              <div class="img"> 
+              </div>
+              <div class="img">
+              </div>
+              <div class="img">
+              </div>
+              <div class="img">
+              </div>
+              <div class="img">
+              </div>
+              <div class="img">
+              </div>
+            </div>
+            <div class="dots"></div>
+          </div>
+        </div>
+        
+        <div class = "section" id = "about-me">
+          <div class = "about-me-content content-box glass-effect">
+            <!-- <img src = ""> -->
+              <h2>About Me</h2>
+              <p>I'm Imhotep Benjamin, a senior at the University of Maryland Global Campus majoring in Digital Media and Web Design, with a minor in Computer Science. I kickstarted my academic journey by graduating from Montgomery College with an associate's degree in Integrated Studies in 2021. I'm not just a student; I'm a creative developer well-versed in coding languages like Java, HTML, CSS, JavaScript, and Python.
+              <br>
+              <br>
+                My passion for creativity extends beyond coding. Since 2012, I've been immersed in the world of music production. In 2016, I ventured into graphic and digital design, driven by the desire to craft unique visuals for my YouTube channel. My signature style blends grainy textures with abstract elements, giving my visual creations a distinct and captivating edge. This fusion of technology and artistry defines my path as a digital artist and developer.<p>
+              <button type = "button" class = "glass-effect">Let's Talk</button>
+          </div>
+          <div class = "content-box glass-effect about-me-links">
+            <h2>Links</h2>
+            <ul class = "links">
+              <li><a href = "mailto:imhotepbenjamin@gmail.com?subject = Contact Imhotep" class = "gmail" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Email Me</a></li>
+
+              <li><a href = "https://github.com/yxngbxnji" class = "github" target = _blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span><img src = "img/Social Media Icons/icons8-github-480.png"  class = "icon"></a></li>
+
+              <li><a href = "https://www.linkedin.com/in/imhotepbenjamin/" class = "linkedin" target = _blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span><img src = "img/Social Media Icons/icons8-linkedin-480.png"  class = "icon"></a></li>
+
+              <li><a href = "https://www.youtube.com/@updnbxnji" class = "youtube" target = "_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span><img src="img/Social Media Icons/icons8-youtube-480.png" class = "icon"></a></li>
+
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    <!--
+    <div class = "sections">
+          <div class = "box">
+          <h2 id = "programming">Programming</h2>
+          <p class = "info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          </div>
+
+          <div class = "box">
+          <h2 id = "music">Music</h2>
+          <p class = "info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          </div>
+
+          <div class = "box">
+          <h2 id = "gfx">Graphic Design</h2>
+          <p class = "info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          </div>
+
+          <div class = "box">
+          <h2 id = "other">Other</h2>
+          <p class = "info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          </div>
+    </div>
+    -->
+
+
+    <script src="main.js"></script>
+   </body>
+ </html>

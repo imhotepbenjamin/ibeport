@@ -1,0 +1,479 @@
+* {
+  font-family: "Wotfard";
+  src: url(fonts/Wotfard-Regular.otf);
+  list-style: none;
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Wotfard", sans-serif; /* Add a fallback sans-serif font */
+}
+.header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  align-self: flex-start;
+  z-index: 2;
+  display: flex;
+}
+.glass-effect{
+  background-color: #0000001a;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  backdrop-filter: blur(13px);
+  background-blend-mode: overlay;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 1s ease-out;
+}
+.glass-effect:hover {
+  background-color: #0000004f;
+  backdrop-filter: blur(25px);
+  
+
+}
+/* CSS */
+button {
+  display: flex;
+  appearance: none;
+  align-items: center;
+  border-style: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 100;
+  /*outline: none;*/
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: 2s ease-out;
+  /*user-select: none;*/
+  /*-webkit-user-select: none;*/
+  /*touch-action: manipulation;*/
+  width: fit-content;
+  position: relative;
+  height: 50px;
+}
+button:hover {
+  color: #00b5ff;
+  transition: 0.3s ease-out 0.3s;
+  background-color: #000000c9;
+}
+.contact-button {
+  position: fixed;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+.contact-button:hover{
+  background-color: #00000066;
+  color: #00b5ff;
+}
+/* Styles for Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 120;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+.modal h3{
+  font-size: 50px;
+}
+.modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 60%;
+  color: rgba(255,255,255,0.8);
+  align-items: center;
+}
+.close-button {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-button:hover,
+.close-button:focus {
+  color: #00b5ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Styles for chat box */
+.chat-box {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+.message {
+  background-color: #0000002f;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+input[type=text] {
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #000;
+  width: 500px;
+}
+.navbar {
+  position: fixed;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  color: rgba(0,0,0,0.8);
+  border-radius: 12px;
+  list-style-type: none;
+  width: fit-content;
+  text-decoration: none;
+  border: none;
+}
+li{
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+li a {
+  font-weight: 400;
+  display: contents;
+  padding: 5%;
+  text-decoration: none;
+  line-height: 2;
+}
+li a:hover {
+  color: #00b5ff;
+  border-radius: 10px;
+  background-color: rgba(0,0,0, 0.7);
+  transition: 0.8s;
+ 
+}
+li:last-child {
+  border-bottom: none;
+}
+a:link{
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #00b5ff;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+p {
+  word-wrap: break-word;
+  color: #ffffff;
+}
+#container {
+  background-image: url("img/eport back5.png");
+ /*background-image: linear-gradient(to left, #8399b9, #4095b5, #00909a, #008668, #107826);;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.section {
+ min-height: 100vh;
+ height: auto;
+ width: auto;
+ min-width: 100vw;
+ position: relative;
+ display: flex;
+ align-items: flex-end;
+ align-content: flex-end;
+ justify-content: flex-start;
+ overflow: auto;
+}
+#home-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+    z-index: 0;
+}
+#home {
+  justify-content: right;
+  
+}
+.home-content {
+  max-width: 1200px;
+  min-width: 200px;
+  text-align: left;
+  border-radius: 12px;
+  margin: 20px;
+  padding: 30px 40px 30px 40px;
+  align-self: center;
+  transform: translateY(123px);
+  z-index: 10;
+  position: absolute;
+}
+.home-content h1 {
+  font-size: 70px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+.home-content h5 {
+  font-size: 37px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 65px;
+  color: #f4f4f4;
+  width: 100%;
+  padding-bottom: 20px;
+}
+h3{
+  font-size: 23px;
+  width: 100%;    
+  padding-bottom: 20px; 
+  color: #00b5ff;
+}
+h5 {
+  color: white;
+}
+.content-box{
+  position: relative;
+  left: 0;
+  margin: 20px;
+  width: fit-content;
+  align-items: center;
+  padding: 20px;
+  align-self: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.developer-content {
+  top: 0;
+  margin: 20px;
+  padding: 30px 40px 30px 40px;
+  border-radius: 12px;
+  max-width: 1200px;
+  min-width: 200px;
+  text-align: left;
+}
+#music {
+}
+.music-content {
+  text-decoration: none;
+  align-self: flex-end;
+  margin: 20px 30px 20px 30px;
+  height: fit-content;
+  max-width: 500px;
+  left: 0;
+  bottom: 0;
+}
+.music-content button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#yt-button {
+  width: auto;
+  font-size: 20px;
+}
+.music-vids {
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-evenly;
+  width: 1000px;
+  align-self: flex-end;
+}
+iframe {
+  margin: 0;
+  padding: 20px;
+  display: inline-block;
+  align-self: flex-end;
+  align-items: center;
+}
+#gfx{
+}
+.gfx-content {
+  text-decoration: none;
+  align-self: flex-end;
+  margin: 20px 30px 20px 30px;
+  height: fit-content;
+  max-width: 500px;
+}
+.gfx-content p {
+}
+.gfx-content button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.slider, .slider .imgs {
+  width: 1000px;
+  height: 600px;
+  max-height: 1000px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+.slider {
+  overflow: hidden;
+  align-self: center;
+}
+
+.slider .imgs {
+  overflow: hidden;
+}
+
+.slider .img {
+  min-width: 1000px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  left: 100%;
+  /* animation duration can't be greater than variable interval in JS! */
+  /* check JS for other settings */
+  animation: .6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
+  animation-fill-mode: forwards;
+  background-size: cover !important;
+  background-position: center;
+  background-position: 100% !important;
+}
+
+/* Change images here */
+.slider .img:nth-of-type(1) { background: url("img/ultra-hd-eport-background.png"); }
+.slider .img:nth-of-type(2) { background: url("img/afsfasfasdfasf.png"); }
+.slider .img:nth-of-type(3) { background: url("img/updn main.png"); }
+.slider .img:nth-of-type(4) { background: url("img/abstract-for-ib-eport1.png"); }
+.slider .img:nth-of-type(5) { background: url("img/eport2.png"); }
+.slider .img:nth-of-type(6) { background: url("img/keekee collage 2-Recovered.png"); }
+
+.dots {
+  position:absolute;
+  bottom: -40px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 23px;
+  height: 23px;
+  background: #ffffff62;
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background: #3f3f3f;
+  cursor: default;
+}
+
+@keyframes leftNext {
+  from { left: 100%; }
+  to { left: 0; }
+}
+
+@keyframes leftCurr {
+  from { left: 0; }
+  to { left: -100%; }
+}
+
+@keyframes rightNext {
+  from { left: -100%; }
+  to { left: 0; }
+}
+
+@keyframes rightCurr {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+#about-me p{
+  max-width: 800px;
+  font-size: 18px;
+}
+.about-me-content{
+  align-self: flex-end;
+  height: 500px;
+  
+}
+
+.about-me-content button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-me-links {
+align-self:flex-end;
+padding: 20px;
+min-height: 500px;
+max-height: 500px;
+}
+
+.icon {
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.icon:hover{
+  width: 70px;
+  
+}
+
+.links {
+
+}
